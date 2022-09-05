@@ -1,30 +1,38 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { getPopularFilms } from '../../api/fetchPopularFilms'
+import { fetchPopularFilms } from '../../helpers/fetchApi'
 
-export const fetchPopularFilms = createAsyncThunk('fetchPopularFilms', async () => {
-  const products = await getPopularFilms()
+export const getPopularFilms = createAsyncThunk('fetchFilms', async (page) => {
+  const products = await fetchPopularFilms(page)
   return products
 });
 
 const initialState = {
-  films: [],
+  films: null,
+  allFilms: [],
+  page: 2,
   filmsError: null,
 }
 
-export const fetchProducts = createSlice({
+export const fetchFilms = createSlice({
   name: 'fetcher',
   initialState,
-  reducers: {},
+  reducers: {
+    setPage: (state, action) => {
+      state.page = state.page + 1
+    },    
+  },
   extraReducers: (builder) => {
-    builder.addCase(fetchPopularFilms.fulfilled, (state, action) => {
-      state.films = action.payload
+    builder.addCase(getPopularFilms.fulfilled, (state, action) => {
+      state.films = action.payload.results
+      state.allFilms = [...state.allFilms, ...action.payload.results]
     })
-    builder.addCase(fetchPopularFilms.rejected, (state, action) => {
+    builder.addCase(getPopularFilms.rejected, (state, action) => {
       state.filmsError = action.payload
     })
   }
 })
 
 export const popularFilms = (state) => state.fetcher.films
+export const { loadMore, setPage } = fetchFilms.actions
 
-export default fetchProducts.reducer
+export default fetchFilms.reducer
