@@ -18,7 +18,7 @@ function ProductList() {
   
   return (
     <section className="p-[1rem]">
-      <div className="flex flex-wrap gap-[1rem] justify-between">
+      <div className="flex flex-wrap gap-[1vw] justify-around">
         {films !== null &&
           allFilms.map((film) => (
             <MovieCard

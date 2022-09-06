@@ -15,13 +15,13 @@ function CheckOutModal () {
   }
 
   return (
-    <div className="p-[1rem] border border-2 border-gray w-[30vw] h-[20vh] absolute bg-white top-[25vh] self-center">
+    <div className="checkOutModalContainerMq p-[1rem] border-2 border-gray w-[30vw] h-[20vh] absolute bg-white top-[25vh] self-center">
       <div className="relative h-[100%]">
-        <h1 className="text-[2vw] font-bold text-center">
+        <h1 className="nameMq text-[2vw] font-bold text-center">
           {`Obrigado ${name}!`}
         </h1>
 
-        <p className="text-[1.25vw] mt-[1rem] text-center">
+        <p className="sucessfullMsgMq text-[1.25vw] mt-[1rem] text-center">
           Sua compra foi finalizada com sucesso!
         </p>
         <Link to="/">

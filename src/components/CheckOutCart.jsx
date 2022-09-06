@@ -110,12 +110,14 @@ function CheckOutCart() {
             <ArrowSquareLeft size={32} color="#ffffff" weight="fill" />
           </button>
         </Link>
-        <h1>Meu Carrinho</h1>
+        <h1 className="checkOutTitle">Meu Carrinho</h1>
       </header>
 
-      <section className="flex w-[75vw] h-[45vh] border border-yellow-900 justify-between self-center p-[1.5vw] mt-[6vh]">
-        <div className="w-[30vw]">
-          <h1 className="text-[2vw] font-bold mb-[2vh]">Finalizar Compra</h1>
+      <section className="checkOutCardMq flex w-[75vw] h-[45vh] border border-yellow-900 justify-between self-center p-[1.5vw] mt-[6vh]">
+        <div className="endCartMq w-[30vw]">
+          <h1 className="checkOutCarTitleMq text-[2vw] font-bold mb-[2vh]">
+            Finalizar Compra
+          </h1>
           <form>
             <label className="width-[100%]" htmlFor="userName">
               <input
@@ -131,7 +133,7 @@ function CheckOutCart() {
             <div className="flex justify-between mb-[2vh]">
               <label htmlFor="userCpf">
                 <InputMask
-                  className="p-[0.2rem] w-[12vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
+                  className="mediumSizeInputMq p-[0.2rem] w-[12vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
                   mask="999.999.999-99"
                   placeholder="CPF"
                   name="userCpf"
@@ -142,7 +144,7 @@ function CheckOutCart() {
 
               <label htmlFor="userPhone">
                 <InputMask
-                  className="p-[0.2rem] w-[14.5vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
+                  className="mediumSizeInputMq p-[0.2rem] w-[14.5vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
                   mask="(99) 99999-9999"
                   placeholder="Celular"
                   name="userPhone"
@@ -166,7 +168,7 @@ function CheckOutCart() {
             <div className="flex justify-between mb-[2vh]">
               <label htmlFor="userCEP">
                 <InputMask
-                  className="p-[0.2rem] w-[12vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
+                  className="mediumSizeInputMq p-[0.2rem] w-[12vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
                   mask="99999-999"
                   placeholder="CEP"
                   onChange={handleChange}
@@ -176,7 +178,7 @@ function CheckOutCart() {
 
               <label htmlFor="userAddress">
                 <input
-                  className="p-[0.2rem] w-[17vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
+                  className="mediumSizeInputMq p-[0.2rem] w-[17vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
                   type="text"
                   name="userAddress"
                   id="userAddress"
@@ -189,7 +191,7 @@ function CheckOutCart() {
             <div className="flex justify-between mb-[2vh]">
               <label htmlFor="userCity">
                 <input
-                  className="p-[0.2rem] w-[14.5vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
+                  className="mediumSizeInputMq p-[0.2rem] w-[14.5vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
                   type="text"
                   name="userCity"
                   id="userCity"
@@ -200,7 +202,7 @@ function CheckOutCart() {
 
               <label htmlFor="userState">
                 <input
-                  className="p-[0.2rem] w-[14.5vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
+                  className="mediumSizeInputMq p-[0.2rem] w-[14.5vw] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50"
                   type="tel"
                   name="userState"
                   id="userState"
@@ -212,21 +214,21 @@ function CheckOutCart() {
 
             <div className="flex">
               <input
-                className="p-[0.2rem] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50 mb-[2vw]"
+                className="promoCheckboxMq p-[0.2rem] placeholder:text-slate-300 border rounded border-gray-300 border-opacity-50 mb-[2vw]"
                 type="checkbox"
                 name="userPromo"
                 id="userPromo"
                 onChange={handleChange}
                 checked={isChecked}
               />
-              <label className="text-[1vw] ml-[1vw] " htmlFor="userPromo">
+              <label className="promoCheckboxTitleMq text-[1vw] ml-[1vw] " htmlFor="userPromo">
                 Desejo receber promoções e novidades por e-mail
               </label>
             </div>
           </form>
         </div>
 
-        <div className="w-[38vw] h-[40vh] bg-gray-200 bg-opacity-40 p-5 relative border-l border-brand-primary border-opacity-40">
+        <div className="checkOutProductsMq w-[38vw] h-[40vh] bg-gray-200 bg-opacity-40 p-5 relative border-l border-brand-primary border-opacity-40">
           <div className="h-[28vh] overflow-y-auto">
             {cartProducts.length > 0 &&
               cartProducts.map((product) => (
@@ -241,9 +243,9 @@ function CheckOutCart() {
               ))}
           </div>
 
-          <div className="flex absolute z-10 bottom-10">
+          <div className="flex absolute z-10 bottom-10 w-[90%]">
             {cartProducts.length > 0 && (
-              <div className="flex justify-between space-x-40">
+              <div className="flex justify-between w-[100%]">
                 <h1>Total:</h1>
                 <h1>{`R$ ${totalValue.toFixed(2)}`}</h1>
               </div>
@@ -251,7 +253,7 @@ function CheckOutCart() {
           </div>
 
           <button
-            className="w-[100%] bg-brand-secondary text-white p-1 absolute z-10 bottom-0 left-0"
+            className="endCartBtnMq w-[100%] bg-brand-secondary text-white p-1 absolute z-10 bottom-0 left-0"
             type="button"
             onClick={handleClick}
             disabled={isEndCartBtnValidate()}

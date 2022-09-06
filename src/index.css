@@ -9,6 +9,150 @@
   box-sizing: border-box;
 }
 
-@media screen and ( max-width : 767px ) and ( min-width : 375px ) {
+@media screen and ( max-width : 639px ) and ( min-width : 375px ) {
+  .logoMq {
+        display: none;
+  }
+
+  .searchMq {
+        width: 45vw;
+        margin-left: 2.2vw;
+  }
   
+  .imgMq {
+        height: 20vh;
+        width: 100%;
+        object-fit: fill;
+  }
+
+  .musicCardMq {
+        height: 37vh;
+        max-width: 40vw;
+  }
+  .titleMq {
+        overflow: hidden;
+        font-size: 1.7vh
+  }
+  .filmPriceMq {
+        font-size: 1.7vh;
+  }
+  .filmInfoMq {
+        font-size: 1.7vh;
+  }
+
+  .favSidebarMq{
+        padding: 1rem;
+        width: 200rem;
+        font-size: 3vw;
+  }
+  .sidebarCartContentMq {
+        font-size: 2vw;
+  }
+  .sidebarCartImgMq {
+        display: none;
+  }
+  .sideBarCartTitleMq {
+        width: 15vw;
+        height: 5vh;
+        overflow: auto;
+        justify-content: center;
+        align-self: center;
+  }
+  .sideBarCartTitleMq h1 {
+        align-self: center;
+  }
+  .checkOutCardMq {
+        height: auto;
+        flex-direction: column;
+        width: 90vw;    
+  }
+
+  .checkOutTitle{
+        font-size: 5.5vw;
+  }
+  .endCartMq {
+        width: 100%
+  }
+  .checkOutCarTitleMq {
+        font-size: 4vw;
+  }
+  input::-webkit-input-placeholder {
+        font-size: 3vw;
+  }
+  .mediumSizeInputMq {
+        width: 42vw;
+  }
+
+  .promoCheckboxMq {
+        width: 3vw;
+  }
+  .promoCheckboxTitleMq {
+        font-size: 2.5vw;
+  }
+
+  .checkOutProductsMq {
+        width: 100%;
+       
+  }
+  .endCartBtnMq {
+        font-size: 3vw;
+  }
+  /* .checkOutCardImgMq {
+        display: none;
+  }
+  .checkOutQtMq {
+        display: none;
+  } */
+  .checkOutFilmTitleMq {
+        width: 40vw;
+        height: 5vh;
+        font-size: 3vw;
+        overflow: auto;
+  }
+  .checkOutFilmTitleMq h1 {
+        align-self: center;
+  }
+  .checkOutPrice {
+        font-size: 3vw;
+  }
+  .checkOutModalContainerMq {
+        width: 70vw;
+        top: 35vh;
+  }
+  .nameMq {
+        font-size: 4.3vw;
+  }
+  .sucessfullMsgMq {
+        font-size: 3vw;
+  }
+}
+
+@media screen and ( max-width : 768px ) and ( min-width : 640px ) {
+  .promoCheckboxTitleMq {
+    font-size: 1.5vh;
+  }
+  .checkOutModalContainerMq {
+    width: 50vw;
+  }
+  .nameMq {
+    font-size: 2.5vh;
+  }
+  .sucessfullMsgMq {
+    font-size: 1.5vh;
+  }
+}
+
+@media screen and ( max-width : 1024px ) and ( min-width : 769px ) {
+  .promoCheckboxTitleMq {
+    font-size: 1.5vh;
+  }
+  .checkOutModalContainerMq {
+    width: 40vw;
+  }
+  .nameMq {
+    font-size: 2.5vh;
+  }
+  .sucessfullMsgMq {
+    font-size: 1.5vh;
+  }
 }

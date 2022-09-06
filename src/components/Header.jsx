@@ -17,13 +17,13 @@ function Header() {
   
   return (
     <header className="flex justify-between p-1 bg-brand-primary h-14 items-center">
-      <div className="ml-[3rem]">
+      <div className="logoMq ml-[3vw]">
         <h1 className="text-xl text-white">FireMovies</h1>
       </div>
 
       <div className="flex relative">
         <input
-          className="p-[0.2rem] w-[15rem] placeholder:text-slate-300"
+          className="searchMq p-[0.2rem] w-[15rem] placeholder:text-slate-300"
           type="text"
           placeholder="Pesquisa"
         />
@@ -32,7 +32,7 @@ function Header() {
         </span>
       </div>
 
-      <div className="flex space-x-3 mr-[3rem]">
+      <div className="flex space-x-3 mr-[3vw]">
         <button
           onClick={setFavoriteSideBar}
         >

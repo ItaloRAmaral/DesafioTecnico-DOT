@@ -11,7 +11,7 @@ function FavoriteSideBar () {
     dispatch(clearFavoriteFilms())
   }
   return (
-    <section className="w-[95rem] h-[80vh] bg-gray-200 bg-opacity-40 p-5 relative border-l border-brand-primary border-opacity-40">
+    <section className="favSidebarMq w-[95rem] h-[80vh] bg-gray-200 bg-opacity-40 p-5 relative border-l border-brand-primary border-opacity-40">
       <div className="flex justify-between">
         <h1>Meus Favoritos</h1>
         <button onClick={clearFavorite}>Esvaziar</button>

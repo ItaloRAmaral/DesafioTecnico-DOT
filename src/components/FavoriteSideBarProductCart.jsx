@@ -27,8 +27,8 @@ function FavoriteSideBarProductCart(props) {
   }
 
   return (
-    <section className="flex gap-[0.5rem] h-[2rem] justify-between text-xs mt-[0.7rem]  items-center">
-      <div className="w-[2rem] h-[2rem]">
+    <section className="sidebarCartContentMq flex gap-[0.5rem] h-[2rem] justify-around text-xs mt-[0.7rem]  items-center">
+      <div className="sidebarCartImgMq w-[2rem] h-[2rem]">
         <img
           className="w-[100%] h-[100%] object-cover"
           src={`${BASE_URL_IMAGE}${poster}`}
@@ -36,7 +36,7 @@ function FavoriteSideBarProductCart(props) {
         />
       </div>
 
-      <div className="flex flex-wrap text-xs w-[7rem]">
+      <div className="sideBarCartTitleMq flex flex-wrap text-xs w-[7rem]">
         <h1>{title}</h1>
       </div>
 

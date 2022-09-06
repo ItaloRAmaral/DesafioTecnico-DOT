@@ -15,7 +15,7 @@ function SideBarProductCart(props) {
 
   return (
     <section className="flex gap-[0.5rem] h-[2rem] justify-between text-xs mt-[0.7rem]  items-center">
-      <div className="w-[2rem] h-[2rem]">
+      <div className="checkOutCardImgMq w-[2rem] h-[2rem]">
         <img
           className="w-[100%] h-[100%] object-cover"
           src={`${BASE_URL_IMAGE}${poster}`}
@@ -23,12 +23,12 @@ function SideBarProductCart(props) {
         />
       </div>
 
-      <div className="flex flex-wrap text-xs w-[7rem]">
+      <div className="checkOutFilmTitleMq flex flex-wrap text-xs w-[7rem]">
         <h1>{title}</h1>
       </div>
 
-      <h1>{quantity}</h1>
-      <h1>{`R$ ${price}`}</h1>
+      <h1 className="checkOutQtMq">{quantity}</h1>
+      <h1 className="checkOutPrice">{`R$ ${price}`}</h1>
 
       <button onClick={removeProduct}>
         <Trash size={16} color="#999999" weight="duotone" />

@@ -58,7 +58,7 @@ function MovieCard(props) {
   }
   
   return (
-    <div className="w-[12rem] h-[27rem] gap-[5rem] border bg-brand-primary bg-opacity-30 border-brand-secondary text-center relative">
+    <div className="musicCardMq w-[12rem] h-[27rem] gap-[5rem] border bg-brand-primary bg-opacity-30 border-brand-secondary text-center relative">
       <button
         className="absolute right-0 pointer-events-auto"
         onClick={() => addToFavoriteFilms(title, filmPrice, props.poster, id)}
@@ -71,13 +71,13 @@ function MovieCard(props) {
       </button>
 
       <img
-        className="w-[100%] object-cover"
+        className="imgMq w-[100%] object-cover"
         src={`${BASE_URL_IMAGE}${props.poster}`}
         alt={title}
       />
-      <h2 className="mb-[0.5rem]">{title}</h2>
+      <h2 className="titleMq mb-[0.5rem]">{title}</h2>
 
-      <div className="flex space-x-2 justify-evenly mb-[0.5rem]">
+      <div className="filmInfoMq flex space-x-2 justify-evenly mb-[0.5rem]">
         <div className="flex items-center space-x-1">
           <Star size={18} color="#fcff5c" weight="fill" />
           <h5>{vote}</h5>
@@ -86,7 +86,7 @@ function MovieCard(props) {
         <h5>{genreName}</h5>
       </div>
 
-      <h5>{`R$ ${filmPrice}`}</h5>
+      <h5 className="filmPriceMq">{`R$ ${filmPrice}`}</h5>
 
       <button
         className="w-[100%] bg-brand-secondary text-white p-1 absolute z-10 bottom-0 left-0"
