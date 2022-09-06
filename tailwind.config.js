@@ -4,10 +4,10 @@ module.exports = {
     extend: {
        colors: {
          brand: {
-           primary: "#A0EDF0",
-           secondary: "#F56F36",
+           primary: "#5DD8D9",
+           secondary: "#2074D6",
            dark: "#000",
-           lightDark: "#1F2738",
+           tertiary: "#FA2540",
          }
        },
     },

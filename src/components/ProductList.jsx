@@ -7,7 +7,7 @@ function ProductList() {
   const films = useSelector(state => state.fetchFilms.films);
   const allFilms = useSelector(state => state.fetchFilms.allFilms);
   const page = useSelector(state => state.fetchFilms.page);
-  // const page = 1
+
   const dispatch = useDispatch();
 
   const loadMoreFilms = async (e) => {
@@ -17,20 +17,22 @@ function ProductList() {
   };
   
   return (
-    <section>
-      <div>
-        {films !== null && allFilms.map((film) => (
-          <MovieCard 
-            key={film.id}
-            title={film.title}
-            genre={film.genre_ids}
-            vote={film.vote_average}
-            poster={film.poster_path}
-            id={film.id}
-          />
-        ))}
+    <section className="p-[1rem]">
+      <div className="flex flex-wrap gap-[1rem] justify-between">
+        {films !== null &&
+          allFilms.map((film) => (
+            <MovieCard
+              key={film.id}
+              title={film.title}
+              genre={film.genre_ids}
+              vote={film.vote_average}
+              poster={film.poster_path}
+              id={film.id}
+            />
+          ))}
       </div>
       <button
+        className="w-[100%] bg-brand-secondary text-white p-1 mt-[1rem]"
         type="button"
         onClick={loadMoreFilms}
       >
