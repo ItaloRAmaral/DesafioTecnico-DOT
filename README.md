@@ -17,10 +17,10 @@ impacto positivo no cliente."
 
 * Utilização obrigatória de React.js, Javascript ou jQuery;
 * Implementar o layout da página inicial e carrinho da loja;
-*  Integração com a API de filmes TMDb;
-*  Lista de filmes retornadas da API;
-*  Carrinho de compras lateral totalmente funcional;
-*  Mostrar a quantidade de itens do carrinho no botão de abrir o carrinho.
+* Integração com a API de filmes TMDb;
+* Lista de filmes retornadas da API;
+* Carrinho de compras lateral totalmente funcional;
+* Mostrar a quantidade de itens do carrinho no botão de abrir o carrinho.
 
 2 - Requisitos desejáveis: 
 
@@ -48,6 +48,9 @@ impacto positivo no cliente."
 
 * REACT
 * REDUX TOOL KIT
+* REACT ROUTER DOM
+* PHOSPHOR-REACT
+* REACT-INPUT-MASK
 * CSS PURO
 * TAILWIND
 
