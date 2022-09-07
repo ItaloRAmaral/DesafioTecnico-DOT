@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Star Wars Planet Search
+###### by _[Italo Amaral](https://www.linkedin.com/in/italo-rockenbach-594082132/)_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :page_with_curl: Sobre
+Este projeto foi realizado como uma resposta ao desafio técnico a uma vaga de Desenvolvedor Front End Pleno na DOT Digital Group.
 
-## Available Scripts
+- Contexto do Desafio:
 
-In the project directory, you can run:
+"Um de nossos clientes solicitou a implementação de uma loja de filmes em seu site.
+E você será o responsável por essa implementação visual e pela integração com a
+API. O cliente forneceu um protótipo básico do layout desejado, cabe a você
+implementar da melhor forma as telas solicitadas, queremos ver a sua criatividade
+em jogo para transformar esse protótipo em algo funcional e que cause um grande
+impacto positivo no cliente."
 
-### `npm start`
+1 - Requisitos Obrigatórios: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Utilização obrigatória de React.js, Javascript ou jQuery;
+* Implementar o layout da página inicial e carrinho da loja;
+*  Integração com a API de filmes TMDb;
+*  Lista de filmes retornadas da API;
+*  Carrinho de compras lateral totalmente funcional;
+*  Mostrar a quantidade de itens do carrinho no botão de abrir o carrinho.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2 - Requisitos desejáveis: 
 
-### `npm test`
+* Pesquisa de filmes;
+* Implementar checkout;
+* Prosseguir para o checkout;
+* Validar o preenchimento completo do formulário;
+* Implementar máscaras nos campos de email, celular, CEP e CPF;
+* Ao finalizar a compra, apresentar modal de sucesso.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :memo: Metodologia Utilizada
 
-### `npm run build`
+* Kanban
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :man_technologist: Habilidades desenvolvidas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Manipulação de componentes REACT
+* Manipulação de estados globais atravéz de Redux Tool Kit
+* Requisição de dados _[nesta api](https://developers.themoviedb.org/3/getting-started/introduction)_
+* Renderização de um banco de dados
+* Estilização responsiva
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :hammer_and_wrench: Ferramentas Utilizadas
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* REACT
+* REDUX TOOL KIT
+* CSS PURO
+* TAILWIND
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Como Executar
+Clone o repositório em uma pasta de preferência
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+git clone git@github.com:ItaloRAmaral/Star-Wars-Planet-Search.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Entre na pasta que você acabou de clonar, e instale as dependencias
 
-## Learn More
+```
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :iphone: Como funciona
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
